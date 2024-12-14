@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styless.css">
+
+</head>
+<body>
+    <div class="allcon">
+        <div class="bigbox">
+    <div class="cart-container">
+        <h2>Cart</h2>
+        <hr style="border: 1px solid #ddd; width: 600px;">
+        <div class="cart-item">
+            <img src="1.png" alt="T-shirt">
+            <div class="item-details">
+                
+                <div class="stop">
+                <div>Laneige glowing lip </div>
+                <div>$15</div>
+                </div>
+    
+                <div class="stock">
+                <div>$15</div>
+                <div class="line"></div>
+                <div class="stock4">In Stock</div>
+                </div>
+    
+                <div class="item-options1">
+                    <div class="actions">
+                        <div class="quantity-selector">
+                            <button onclick="decrease('quantity1')">−</button>
+                            <input type="text" id="quantity1" value="1" readonly>
+                            <button onclick="increase('quantity1')">+</button>
+                        </div>
+                    
+                        <script>
+                            function increase(id) {
+                                const input = document.getElementById(id);
+                                input.value = parseInt(input.value) + 1;
+                            }
+                    
+                            function decrease(id) {
+                                const input = document.getElementById(id);
+                                if (parseInt(input.value) > 1) {
+                                    input.value = parseInt(input.value) - 1;
+                                }
+                            }
+                        </script>
+                </div>
+                
+                    <div class="actions2">
+                        <div class="save">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3C19.5376 3 22 5.5 22 9C22 16 14.5 20 12 21.5C9.5 20 2 16 2 9C2 5.5 4.5 3 7.5 3C9.35997 3 11 4 12 5C13 4 14.64 3 16.5 3Z"></path></svg>        
+                            save</div>
+                            <div class="line"></div>
+
+                        <div class="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM9 11V17H11V11H9ZM13 11V17H15V11H13ZM9 4V6H15V4H9Z"></path></svg>
+                            delete</div>
+                    </div>
+                </div>
+            </div>
+                 
+             
+        </div>
+        <hr style="border: 1px solid #ddd; width: 600px;">
+        <div class="cart-item">
+            <img src="2.png" alt="T-shirt">
+            <div class="item-details">
+                
+                <div class="stop">
+                <div>ROUND LAP Toner</div>
+                <div>$11</div>
+                </div>
+    
+                <div class="stock">
+                <div>$11.00</div>
+                <div class="line"></div>
+                <div class="stock4">Available in 2 days</div>
+                </div>
+    
+                <div class="item-options1">
+                    <div class="actions">
+                        <div class="quantity-selector">
+                            <button onclick="decrease('quantity2')">−</button>
+                            <input type="text" id="quantity2" value="1" readonly>
+                            <button onclick="increase('quantity2')">+</button>
+                        </div>
+                    
+                        <script>
+                            function increase(id) {
+                                const input = document.getElementById(id);
+                                input.value = parseInt(input.value) + 1;
+                            }
+                    
+                            function decrease(id) {
+                                const input = document.getElementById(id);
+                                if (parseInt(input.value) > 1) {
+                                    input.value = parseInt(input.value) - 1;
+                                }
+                            }
+                        </script>
+                </div>
+                
+                    <div class="actions2">
+                        <div class="save">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3C19.5376 3 22 5.5 22 9C22 16 14.5 20 12 21.5C9.5 20 2 16 2 9C2 5.5 4.5 3 7.5 3C9.35997 3 11 4 12 5C13 4 14.64 3 16.5 3Z"></path></svg>        
+                            save</div>
+                            <div class="line"></div>
+
+                        <div class="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM9 11V17H11V11H9ZM13 11V17H15V11H13ZM9 4V6H15V4H9Z"></path></svg>
+                            delete</div>
+                    </div>
+                </div>
+            </div>
+                 
+            
+        </div>
+        <hr style="border: 1px solid #ddd; width: 600px;">
+        <div class="cart-item">
+            <img src="3.png" alt="T-shirt">
+            <div class="item-details">
+                
+                <div class="stop2">
+                <div>Skin 1004</div>
+                <div>$15.5</div>
+                </div>
+    
+                <div class="stock">
+                <div>$34.99</div>
+                <div class="line"></div>
+                <div class="stock4">Out of Stock</div>
+                </div>
+    
+                <div class="item-options1">
+                    <div class="actions">
+                        <div class="quantity-selector">
+                            <button onclick="decrease('quantity3')">−</button>
+                            <input type="text" id="quantity3" value="1" readonly>
+                            <button onclick="increase('quantity3')">+</button>
+                        </div>
+                    
+                        <script>
+                            function increase(id) {
+                                const input = document.getElementById(id);
+                                input.value = parseInt(input.value) + 1;
+                            }
+                    
+                            function decrease(id) {
+                                const input = document.getElementById(id);
+                                if (parseInt(input.value) > 1) {
+                                    input.value = parseInt(input.value) - 1;
+                                }
+                            }
+                        </script>
+                </div>
+                
+                    <div class="actions2">
+                        <div class="save">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3C19.5376 3 22 5.5 22 9C22 16 14.5 20 12 21.5C9.5 20 2 16 2 9C2 5.5 4.5 3 7.5 3C9.35997 3 11 4 12 5C13 4 14.64 3 16.5 3Z"></path></svg>        
+                            save</div>
+                            <div class="line"></div>
+
+                        <div class="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM9 11V17H11V11H9ZM13 11V17H15V11H13ZM9 4V6H15V4H9Z"></path></svg>
+                            delete</div>
+                    </div>
+                </div>
+            </div>
+                 
+            
+        </div>
+        <hr style="border: 1px solid #ddd; width: 600px;">
+        <div class="cart-item">
+            <img src="4.png" alt="T-shirt">
+            <div class="item-details">
+                
+                <div class="stop3">
+                <div>Romand to You</div>
+                <div>$17.99</div>
+                </div>
+    
+                <div class="stock">
+                <div>$17.99</div>
+                <div class="line"></div>
+                <div class="stock4">In Stock</div>
+                </div>
+    
+                <div class="item-options1">
+                    <div class="actions">
+    
+                        <div class="quantity-selector">
+                            <button onclick="decrease('quantity4')">−</button>
+                            <input type="text" id="quantity4" value="1" readonly>
+                            <button onclick="increase('quantity4')">+</button>
+                        </div>
+                    
+                        <script>
+                            function increase(id) {
+                                const input = document.getElementById(id);
+                                input.value = parseInt(input.value) + 1;
+                            }
+                    
+                            function decrease(id) {
+                                const input = document.getElementById(id);
+                                if (parseInt(input.value) > 1) {
+                                    input.value = parseInt(input.value) - 1;
+                                }
+                            }
+                        </script>
+                </div>
+                
+                    <div class="actions2">
+                        <div class="save">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3C19.5376 3 22 5.5 22 9C22 16 14.5 20 12 21.5C9.5 20 2 16 2 9C2 5.5 4.5 3 7.5 3C9.35997 3 11 4 12 5C13 4 14.64 3 16.5 3Z"></path></svg>        
+                            save</div>
+                            <div class="line"></div>
+
+                        <div class="delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM9 11V17H11V11H9ZM13 11V17H15V11H13ZM9 4V6H15V4H9Z"></path></svg>
+                            delete</div>
+                    </div>
+                </div>
+            </div>
+                 
+            
+        </div>
+    </div>   
+    </div>
+
+
+    <div class="summary-container">
+        <h3>Delivery</h3>
+    
+        <hr>
+    
+        <div class="summary-details">
+            <div class="allto">
+            <div class="subtotal">Subtotal</div>
+            <div class="total">$80.96</div>
+            </div>
+    
+            <div class="allto1">
+            <div class="subtotal">Discount</div>
+            <div class="total">(5%) - $16.19</div>
+            </div>
+    
+            <div class="allto2">
+            <div class="subtotal">Delivery
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 9.5C12.8284 9.5 13.5 8.82843 13.5 8C13.5 7.17157 12.8284 6.5 12 6.5C11.1716 6.5 10.5 7.17157 10.5 8C10.5 8.82843 11.1716 9.5 12 9.5ZM14 15H13V10.5H10V12.5H11V15H10V17H14V15Z"></path></svg>
+            </div>
+            <div class="total">$0.00</div>
+            </div>
+    
+            <div class="allto3">
+            <div class="subtotal">Tax
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 9.5C12.8284 9.5 13.5 8.82843 13.5 8C13.5 7.17157 12.8284 6.5 12 6.5C11.1716 6.5 10.5 7.17157 10.5 8C10.5 8.82843 11.1716 9.5 12 9.5ZM14 15H13V10.5H10V12.5H11V15H10V17H14V15Z"></path></svg>        </div>
+            <div class="total">+ $14.00</div>
+            </div>
+    
+            <hr>
+    
+            <div class="allto4">
+            <div class="subtotal">Total</div>
+            <div class="total">$78.76</div>
+        </div>
+        </div>
+    
+        <div class="checkout-actions">
+            <button class="checkout"onclick="location.href='page3.html';">Proceed to checkout</button>
+            <button class="continue" onclick="location.href='full.html';">Continue shopping</button>    </div>
+</div>
+</body>
+</html>

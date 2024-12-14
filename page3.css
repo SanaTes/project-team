@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.payment-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.payment-options i {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #003087; /* Apply color to all icons */
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #003087;
+  font-size: small;
+  border-radius: 4px;
+  
+
+}
+
+a {
+  text-align: center;
+  display: block;
+  color: #007bff;
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: small;
+  color: #003087;
+}
+
+.card-details input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+button {
+  width: auto;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

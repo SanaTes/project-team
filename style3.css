@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+ 
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.best-items .product h3 {
+  color: gray ;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
+.product img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1rem;
+    color: black;
+    margin: 10px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.discount {
+    color: red;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.sale-price {
+    font-weight: bold;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.see-more {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.see-more a {
+    text-decoration: none;
+    color: white;
+}
+
+.see-more:hover {
+    background: gray;
+}
+/* For screens smaller than 768px (iphones) */
+@media only screen and (max-width: 768px) {
+    /* Styles for iPhone */
+    .home-img {
+      width: 100%;  /* Make image fit the screen width */
+    }
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      /* Adjust product grid layout for smaller screens */
+    }
+    /* Add more styles for iPhone here */
+  }
+  
+  /* For screens larger than 768px (desktops) */
+  @media only screen and (min-width: 768px) {
+    /* Styles for desktops */
+    .home-img {
+      width: 50%;  /* Adjust image width for desktops */
+    }
+    .product-grid {
+      grid-template-columns: repeat(4, 1fr);  /* Set product grid layout for desktops */
+    }
+    /* Add more styles for desktops here */
+  }

@@ -1,0 +1,120 @@
+body{
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.center{
+    color: black;
+    border: 1px solid;
+    padding: 0.1rem 16rem;
+    display: flex;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+}
+section{
+    background-color: rgb(215, 221, 221);
+    
+}
+.logo{
+    font-size: 3rem;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+svg{
+    width: 24px;
+    color: grey;
+}
+nav{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+}
+nav a{
+    color: rgb(112, 106, 106);
+} 
+@media(max-width:795px){
+    nav{
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 500;
+    }
+    .center{
+        color: black;
+        border: 1px solid;
+        padding: 0.1rem 8rem;
+        gap: 5px;
+    }
+}
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 10px;
+}
+.home .home-content h1{
+    font-size: 3rem;
+    font-weight: 540;
+}
+.home-content p{
+    font-size: 1.2rem;
+}
+.home-img img{
+    position: relative;
+    width: 35vw;
+    cursor: pointer;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: black;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    color: white;
+    border: 1px solid none;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color:whitesmoke;
+    color: black;
+    box-shadow: 0 0 25px whitesmoke;
+}
+@media only screen and (max-width: 768px) {
+    .home-img {
+      width: 100%;  
+    }
+    .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .home-img {
+      width: 50%;  
+    }
+    .product-grid {
+      grid-template-columns: repeat(4, 1fr);  
+    }
+  }
